@@ -9,8 +9,8 @@ describe('My home work', () => {
 });   
 it('have text', async () => {
         
-    const elem = $('.t388__title t-section__title t-title t-title_md')
-    expect(elem).toHaveText('ОБУЧЕНИЕ СЕРФИНГУ')   
+    await expect(surfPage.lesson).toHaveText('ОБУЧЕНИЕ СЕРФИНГУ')   
 
 }); 
 });
+
